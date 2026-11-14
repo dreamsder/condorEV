@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Política de privacidad de CondorEV. Información sobre ubicación, consultas de cargadores, almacenamiento, permisos y eliminación de datos.">
+  <meta name="referrer" content="no-referrer">
+  <title>Política de privacidad de CondorEV</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f7faf9; --paper:#fff; --text:#172d33; --muted:#496269; --line:#c9dbd7; --accent:#00695c; --tint:#edf6f3; }
+    * { box-sizing:border-box; }
+    html { scroll-padding-top:1rem; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:18px; line-height:1.7; }
+    main { max-width:880px; margin:48px auto; padding:48px 56px; background:var(--paper); border:1px solid var(--line); border-radius:20px; }
+    header { padding-bottom:26px; border-bottom:1px solid var(--line); }
+    .brand { margin:0 0 12px; color:var(--accent); font-weight:750; letter-spacing:.02em; }
+    h1 { margin:0 0 16px; font-size:clamp(30px,6vw,44px); line-height:1.15; letter-spacing:-.03em; }
+    h2 { margin:38px 0 14px; font-size:25px; line-height:1.3; letter-spacing:-.015em; }
+    h3 { margin:24px 0 8px; font-size:20px; line-height:1.4; }
+    p { margin:0 0 16px; }
+    ul,ol { margin:8px 0 20px; padding-left:26px; }
+    li { margin-bottom:10px; }
+    a { color:var(--accent); text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:2px; }
+    code { font-size:.88em; overflow-wrap:anywhere; }
+    .meta { color:var(--muted); font-size:15px; }
+    .summary { margin:28px 0; padding:24px; border-left:4px solid var(--accent); background:var(--tint); border-radius:0 12px 12px 0; }
+    .summary h2 { margin:0 0 12px; font-size:22px; }
+    .summary ul { margin-bottom:0; }
+    nav { font-size:16px; display:flex; flex-wrap:wrap; gap:8px 22px; margin:22px 0 30px; }
+    footer { margin-top:38px; padding-top:24px; border-top:1px solid var(--line); font-size:16px; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#0b1519; --paper:#101f25; --text:#edf6f3; --muted:#b1c6c7; --line:#355159; --accent:#80d7be; --tint:#172e34; } }
+    @media (max-width:600px) { body { font-size:17px; } main { margin:0; padding:32px 22px; border:0; border-radius:0; } h2 { font-size:23px; } .summary { padding:19px; } }
+    @media print { body { background:white; color:black; font-size:11pt; } main { max-width:none; margin:0; padding:0; border:0; } nav { display:none; } a { color:black; } h2,h3 { break-after:avoid; } }
+  </style>
+</head>
+<body>
+<main id="inicio">
+  <header>
+    <p class="brand">CondorEV</p>
+    <h1>Política de privacidad</h1>
+    <p>Esta política explica cómo CondorEV (Condor EV) trata los datos al consultar estaciones de carga de vehículos eléctricos en Uruguay, tanto en el teléfono como en Android Auto y en el widget del teléfono.</p>
+    <p class="meta">Última actualización y entrada en vigor: <time datetime="2026-11-14">14 de noviembre de 2026</time>.<br>Aplicación Android: <code>com.condorev.app</code>. Describe las funciones de la versión 1.5.1.</p>
+  </header>
+
+  <aside class="summary" aria-labelledby="resumen">
+    <h2 id="resumen">Lo esencial</h2>
+    <ul>
+      <li>La ubicación permite encontrar cargadores cercanos. La última posición se guarda en el teléfono; sus coordenadas no se envían a la API de cargadores.</li>
+      <li>Para consultar disponibilidad, el servicio recibe un identificador de instalación, datos técnicos de conexión y las estaciones consultadas. Esas consultas pueden sugerir una zona de interés.</li>
+      <li>CondorEV no requiere cuenta personal, no incluye publicidad ni analítica de uso propia y no vende datos personales.</li>
+      <li>Podés usar la búsqueda sin dar permiso de ubicación y borrar los datos locales desde los ajustes de Android.</li>
+    </ul>
+  </aside>
+
+  <nav aria-label="Secciones de la política">
+    <a href="#responsable">Responsable</a><a href="#datos">Datos y usos</a><a href="#ubicacion">Ubicación</a><a href="#terceros">Terceros</a><a href="#conservacion">Conservación</a><a href="#controles">Tus controles</a><a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="responsable">
+    <h2>1. Responsable y contacto</h2>
+    <p>El responsable de CondorEV es <strong>Cristian Montano</strong>. Para consultas sobre privacidad o solicitudes relacionadas con tus datos, escribí a <a href="mailto:cristianmontano@gmail.com">cristianmontano@gmail.com</a>.</p>
+    <p>Esta política se refiere a CondorEV. Los servicios de cargadores, Android Auto y las aplicaciones de navegación externas tienen sus propias prácticas de tratamiento, que se distinguen más abajo.</p>
+  </section>
+
+  <section id="datos">
+    <h2>2. Qué datos se utilizan y para qué</h2>
+    <h3>Ubicación del dispositivo</h3>
+    <p>Con tu permiso, CondorEV accede a la ubicación aproximada o precisa suministrada por Android. Usa la latitud, longitud, precisión y fecha de la posición para ordenar estaciones, calcular distancias y elegir cuáles actualizar. Guarda la última posición en el almacenamiento privado de la app; no mantiene un historial de recorridos.</p>
+    <h3>Preferencias, estaciones y búsquedas</h3>
+    <p>En el teléfono se guardan el conector y los operadores elegidos, las estaciones favoritas, la estación fijada, el tema visual y las preferencias de widget, permisos y actualización. Se conserva también una copia del catálogo y de los estados de estaciones para mostrar la información disponible.</p>
+    <p>Las búsquedas se filtran localmente sobre ese catálogo. El texto escrito no se envía a la API de cargadores ni a un buscador externo. La consulta y la pantalla actual pueden conservarse temporalmente para restaurar la interfaz; CondorEV no crea un historial persistente de búsquedas.</p>
+    <h3>Identificación técnica y consultas al servicio</h3>
+    <p>La app obtiene y guarda un identificador técnico de instalación para acceder al servicio de cargadores sin que tengas que crear una cuenta personal. Ese identificador se envía en consultas posteriores junto con credenciales temporales de acceso. No es el IMEI ni el identificador publicitario del teléfono, pero permite al proveedor relacionar consultas de una misma instalación.</p>
+    <p>Al solicitar el estado de una estación, se envían los identificadores de esa estación y de su red. La selección puede depender del detalle que abriste, de una estación fijada o de las estaciones cercanas compatibles con tus filtros. No se envían tus coordenadas GPS ni tus preferencias como tales; sin embargo, las estaciones solicitadas pueden permitir inferir intereses o una zona aproximada. El proveedor recibe además la dirección IP y los metadatos habituales de conexión, como la fecha de la solicitud y cabeceras técnicas.</p>
+    <h3>Comunicaciones de soporte</h3>
+    <p>Si escribís al correo de contacto, se tratan tu dirección de correo y la información que decidas incluir para responder y gestionar tu consulta. Evitá enviar contraseñas, claves, documentos o ubicaciones que no sean necesarios.</p>
+  </section>
+
+  <section id="ubicacion">
+    <h2>3. Ubicación, segundo plano y widget</h2>
+    <p>CondorEV solicita permiso antes de acceder a la ubicación y funciona también con ubicación aproximada. Si no lo concedés, podés buscar estaciones por nombre o localidad.</p>
+    <p>La app puede recibir nuevas posiciones mientras la usás en el teléfono o en Android Auto. Si activás <strong>Actualizar en segundo plano</strong>, mantiene las consultas y la ubicación mediante un servicio en primer plano de Android, incluso mientras usás otra aplicación. Ese servicio utiliza una notificación con la acción <strong>Detener</strong>; su presentación depende de los permisos y ajustes del sistema.</p>
+    <p>El widget puede consultar disponibilidad periódicamente aunque la app no esté abierta. Por sí solo no solicita nuevas posiciones: usa la última posición disponible o la estación fijada. Android decide cuándo ejecutar esas actualizaciones. Ocultar el contenido del widget no las detiene; eliminar todos los widgets cancela su tarea periódica.</p>
+    <p>Revocar el permiso de ubicación impide obtener nuevas posiciones, pero no borra la última posición almacenada. Esta puede seguir utilizándose para ordenar y seleccionar estaciones hasta que se reemplace o borres los datos de la app. Detener el servicio tampoco borra los datos guardados.</p>
+  </section>
+
+  <section id="terceros">
+    <h2>4. Con quién se intercambia información</h2>
+    <ul>
+      <li><strong>Proveedor del catálogo y de disponibilidad:</strong> CondorEV consulta los servicios de movilidad eléctrica de UTE, que incluyen estaciones de distintas redes. El proveedor recibe los datos técnicos y de consulta descritos en la sección 2. La presencia de otra marca de cargador en la lista no significa que CondorEV envíe directamente tu GPS o tu perfil a esa empresa. Consultá la <a href="https://www.ute.com.uy/institucional/ute/seguridad-de-la-informacion-y-proteccion-de-datos-personales" rel="noreferrer">información de UTE sobre protección de datos personales</a>.</li>
+      <li><strong>Android y Android Auto:</strong> sus componentes gestionan permisos, ubicación, notificaciones, widgets y la presentación en el auto. El anfitrión de Android Auto procesa la interacción con su interfaz, incluidas búsquedas y resultados que se muestran. Sus servicios se rigen por sus propias políticas, incluida la <a href="https://policies.google.com/privacy?hl=es" rel="noreferrer">Política de Privacidad de Google</a>.</li>
+      <li><strong>Aplicación de navegación elegida:</strong> únicamente al tocar <strong>Navegar hasta ahí</strong>, CondorEV entrega a la aplicación compatible resuelta por Android las coordenadas de la estación y, en el teléfono, también su nombre. Esa aplicación puede acceder a tu ubicación con sus propios permisos para guiarte. Consultá la política del navegador que uses, por ejemplo <a href="https://policies.google.com/privacy?hl=es" rel="noreferrer">Google Maps</a> o <a href="https://support.google.com/waze/answer/12075406" rel="noreferrer">Waze</a>.</li>
+      <li><strong>Correo de soporte:</strong> las comunicaciones que envíes al responsable se gestionan mediante su proveedor de correo electrónico, Gmail, para recibirlas y responderlas.</li>
+    </ul>
+    <p>CondorEV no envía las consultas de cargadores a un servidor propio del desarrollador ni incorpora servicios propios de publicidad, analítica o reporte automático de fallos. Los terceros pueden conservar registros de sus servicios o procesarlos en otros países conforme a sus propias políticas. Esta política no fija sus plazos de conservación ni garantiza la eliminación de sus registros.</p>
+  </section>
+
+  <section id="conservacion">
+    <h2>5. Conservación y eliminación</h2>
+    <ul>
+      <li><strong>Datos guardados en el teléfono:</strong> la última posición, las preferencias, favoritos, identificador de instalación y datos del catálogo permanecen hasta que se reemplacen, los elimines cuando la interfaz lo permita o borres el almacenamiento de CondorEV. No tienen un plazo general de borrado automático.</li>
+      <li><strong>Credenciales temporales:</strong> los tokens de acceso se mantienen en la memoria del proceso y se renuevan cuando es necesario. No se guardan de forma persistente junto con las preferencias.</li>
+      <li><strong>Estados de cargadores:</strong> su vigencia informativa no equivale a su eliminación. Una observación con más de cinco minutos deja de presentarse como disponibilidad confirmada, aunque siga en la copia local.</li>
+      <li><strong>Soporte:</strong> las comunicaciones se conservan mientras sean necesarias para atender la consulta, gestionar su seguimiento o cumplir obligaciones legales aplicables. Podés solicitar su eliminación al responsable.</li>
+      <li><strong>Registros de terceros:</strong> borrar CondorEV no elimina automáticamente los datos ya recibidos por el proveedor de cargadores, el navegador o el proveedor de correo. Las solicitudes sobre esos registros deben dirigirse también al tercero correspondiente.</li>
+    </ul>
+    <p>CondorEV no ofrece cuentas personales que debas cerrar. Borrar los datos locales elimina también el identificador de instalación guardado; si volvés a usar las funciones en línea, se realizará de nuevo el registro técnico con el servicio.</p>
+  </section>
+
+  <section id="controles">
+    <h2>6. Tus opciones y derechos</h2>
+    <ul>
+      <li>Podés modificar o revocar el permiso de ubicación desde <strong>Ajustes de Android → Aplicaciones → CondorEV → Permisos</strong>.</li>
+      <li>Podés detener la actualización en segundo plano desde Ajustes de CondorEV o desde la acción Detener de su notificación, cuando esté visible. Si seguís usando la app o Android Auto, sus pantallas activas pueden continuar actualizando información.</li>
+      <li>Podés quitar los widgets de la pantalla de inicio, cambiar tus filtros y eliminar estaciones de Guardados.</li>
+      <li>Para eliminar todos los datos locales, usá <strong>Ajustes de Android → Aplicaciones → CondorEV → Almacenamiento → Borrar datos</strong>, o desinstalá la app. Los nombres exactos pueden variar según el teléfono. Borrar solo la caché no equivale a borrar todos los datos.</li>
+    </ul>
+    <p>Podés solicitar información, acceso, rectificación, actualización o eliminación de los datos tratados por el responsable, así como ejercer los demás derechos que correspondan según la normativa aplicable, escribiendo al correo de contacto. Para datos que existen solo en tu teléfono, el responsable no dispone de una copia remota: su eliminación se realiza desde tu dispositivo. Para datos bajo control de terceros, podés usar sus canales de privacidad.</p>
+  </section>
+
+  <section id="seguridad">
+    <h2>7. Seguridad</h2>
+    <p>Las consultas de red de CondorEV utilizan HTTPS. Los datos locales se guardan en el almacenamiento privado de la aplicación, protegido por los controles de acceso de Android. La app está configurada para desactivar la copia automática estándar de Android; las funciones de migración o transferencia del fabricante dependen del sistema del dispositivo.</p>
+    <p>CondorEV no solicita contraseñas de cuentas personales del servicio de carga y no registra los cuerpos de las respuestas ni credenciales en un sistema propio de telemetría. Ningún mecanismo de almacenamiento o transmisión permite garantizar una seguridad absoluta.</p>
+  </section>
+
+  <section id="alcance">
+    <h2>8. Datos que no solicita la app</h2>
+    <p>CondorEV no solicita acceso a contactos, fotos, cámara, micrófono, mensajes SMS o llamadas. No usa el identificador publicitario ni el IMEI, no ofrece pagos o reservas y no pide datos bancarios ni información de una cuenta de carga personal. La información de ocupación y tiempos corresponde a los puestos de carga; no identifica a las personas que están cargando.</p>
+    <p>La app no está dirigida específicamente a niños. Si creés que un menor proporcionó datos personales al responsable por los canales de soporte, podés contactarlo para solicitar su revisión y, cuando corresponda, eliminación.</p>
+  </section>
+
+  <section id="pagina">
+    <h2>9. Consulta de esta página</h2>
+    <p>Esta página de privacidad no incorpora formularios, publicidad, analítica, cookies propias ni recursos externos cargados automáticamente. Al visitarla, el proveedor de alojamiento puede recibir tu dirección IP y datos técnicos del navegador para servir la página y mantener la seguridad de su infraestructura. Los enlaces a otros sitios se abren solamente si decidís utilizarlos y quedan sujetos a las políticas de esos sitios.</p>
+  </section>
+
+  <section id="cambios">
+    <h2>10. Cambios en esta política</h2>
+    <p>Esta política se actualizará cuando cambien las funciones o el tratamiento de datos de CondorEV. La fecha de actualización se indicará al comienzo de la página. Si un cambio requiere información adicional o tu consentimiento, se solicitará antes del nuevo tratamiento cuando corresponda. La publicación de una nueva política no sustituye los permisos y consentimientos necesarios.</p>
+  </section>
+
+  <footer id="contacto">
+    <p><strong>Consultas de privacidad</strong><br>Cristian Montano · CondorEV<br><a href="mailto:cristianmontano@gmail.com">cristianmontano@gmail.com</a></p>
+    <a href="#inicio">Volver al inicio</a>
+  </footer>
+</main>
+</body>
+</html>
